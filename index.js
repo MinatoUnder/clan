@@ -18,14 +18,14 @@ client.channels.find('id', '473104410571177986').setName("「 Wel");
 client.channels.find('id', '473104410571177986').setName("「 Welco");
 client.channels.find('id', '473104410571177986').setName("「 Welcome");
 client.channels.find('id', '473104410571177986').setName("「 Welcome To");
-client.channels.find('id', '473104410571177986').setName("「 Welcome To Da");
-client.channels.find('id', '473104410571177986').setName("「 Welcome To Dark");
-client.channels.find('id', '473104410571177986').setName("「 Welcome To Darkne");
-client.channels.find('id', '473104410571177986').setName("「 Welcome To Darkness");
-client.channels.find('id', '473104410571177986').setName("「 Welcome To Darkness 」");
+client.channels.find('id', '473104410571177986').setName("「 Welcome To Ru");
+client.channels.find('id', '473104410571177986').setName("「 Welcome To Rugg");
+client.channels.find('id', '473104410571177986').setName("「 Welcome To Rugge");
+client.channels.find('id', '473104410571177986').setName("「 Welcome To Rugger");
+client.channels.find('id', '473104410571177986').setName("「 Welcome To RuggerZ 」");
 client.channels.find('id', '473104410571177986').setName("「 This Serv");
 client.channels.find('id', '473104410571177986').setName("「 This Server Us");
-client.channels.find('id', '473104410571177986').setName("「 This Server Useing Frix Premium 」");
+client.channels.find('id', '473104410571177986').setName("「 This Server Useing RuggerZ 」");
   }, 3000);
 });
 
@@ -12363,6 +12363,6 @@ message.member.addRole(message.guild.roles.find("name", "100"));
   }
 	
 });
+
   
-client.login('NDczMDYwMjg3MjMxMDMzMzc2.DkDuww.x1km5xCIHtLCAz5VQNRCMTf8dyQ');
-	
+client.login(process.env.BOT_TOKEN);	
