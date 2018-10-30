@@ -392,7 +392,6 @@ message.channel.sendEmbed(Embed).then(msg => {
                                 }
                                 });
 
-const client = new Discord.Client();
 var prefix = "?" ;   // البرفكس هنا
 
 
