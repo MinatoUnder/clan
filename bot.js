@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '*'
+const prefix = '?'
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -38,7 +38,7 @@ client.user.setGame(`UnderWorld' Community🌹`,"http://twitch.tv/S-F")
 
 client.on('message', message => {
               if(!message.channel.guild) return;
-    var prefix = "*";
+    var prefix = "?";
     if(message.content.startsWith(prefix + 'bc')) {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
@@ -105,7 +105,7 @@ client.on('message', msg => {
 
 client.on('message', message => {
  
-    if (message.content === "*mutechannel") {
+    if (message.content === "?mutechannel") {
                         if(!message.channel.guild) return message.reply(' This command only for servers');
  
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' ليس لديك صلاحيات');
@@ -117,7 +117,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' لي
            });
              }
 //™¦༺♚ƙἶղց|MaS♚༺¦™#7105
-if (message.content === "*unmutechannel") {
+if (message.content === "?unmutechannel") {
     if(!message.channel.guild) return message.reply(' This command only for servers');
  
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('ليس لديك صلاحيات');
@@ -134,7 +134,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
 });
 
 client.on('message', async message =>{
-  var prefix = "*";
+  var prefix = "?";
 const ms = require("ms");
 if (message.author.omar) return;
 if (!message.content.startsWith(prefix)) return;
@@ -201,7 +201,7 @@ if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return mess
  
 });
 
-var prefix = "*"
+var prefix = "?"
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -258,7 +258,7 @@ client.on('message', message => {
                     });
 
 client.on('message', message => {
-    if (message.content.startsWith("$avatar")) {
+    if (message.content.startsWith("?avatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
       if(mentionned){
@@ -279,7 +279,7 @@ client.on('ready',async () => {
 });
 
 client.on('message',message =>{
-    var prefix = "*";
+    var prefix = "?";
     if(message.content.startsWith(prefix + 'topinv')) {
   message.guild.fetchInvites().then(i =>{
   var invites = [];
@@ -306,7 +306,7 @@ client.on('message',message =>{
     }
   });
 
-var prefix = "*"
+var prefix = "?"
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -351,7 +351,7 @@ var RAW2 = ["ًں“™__60%__  **|**  ًں“ک__40%__","ًں“™__63%__  **|
 client.on('message', message => {
     if(!message.guild) return;
     if (message.author.bot) return;
-      let id = message.author.id,prefix="*";
+      let id = message.author.id,prefix="?";
       if (ti[id] && (new Date).getTime() - ti[id] < 20*1000) {
           let r = (new Date).getTime() - ti[id];
           r = 20*1000 - r;
@@ -399,7 +399,7 @@ message.channel.sendEmbed(Embed).then(msg => {
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "*" ;   // البرفكس هنا
+var prefix = "?" ;   // البرفكس هنا
 
 
 
@@ -407,33 +407,33 @@ var requestHelp = async function(type, user, message) {
     switch(type) {
         case "games":
             var gamesHelp = await new Discord.RichEmbed()
-                .addField("*لو خيروك** ", "لو خيروك** ")
-                .addField("*roll** ", "9or3a** ")
-                .addField("*skin** ", "ur mc skin** ")
+                .addField("?لو خيروك** ", "لو خيروك** ")
+                .addField("?roll** ", "9or3a** ")
+                .addField("?skin** ", "ur mc skin** ")
             user.send(gamesHelp);
         break;
         case "general":
             var generalHelp = await new Discord.RichEmbed()
-                .addField("*ping", " **Your ping** ")
-                .addField("*avatar", " **افتارك** ")
-                .addField("*topinv", " **top invites** ")
-                .addField("*mb", " **members info** ")
-                .addField("*server", " **server info** ")
+                .addField("?ping", " **Your ping** ")
+                .addField("?avatar", " **افتارك** ")
+                .addField("?topinv", " **top invites** ")
+                .addField("?mb", " **members info** ")
+                .addField("?server", " **server info** ")
             user.send(generalHelp);
         break;
         case "admin":
         if(message.member.hasPermission("ADMINISTRATOR")) {
             var adminHelp = await new Discord.RichEmbed()
-                .addField("*clear", " **مسح الشات** ")
-                .addField("*bc", " **بروكاست** ")
-                .addField("*mute", " **Mute member** ")
-                .addField("*unmute", " **UnMute member** ")
-                .addField("*kick", " **kick member** ")
-                .addField("*ban", " **ban member** ")
-                .addField("*mutechannel", " **mutechat** ")
-                .addField("*unmutechannel", " **unmutechat** ")
-                .addField("*moveall", " **moveall to ur room** ")
-                .addField("*move", " **move anymember to ur room** ")
+                .addField("?clear", " **مسح الشات** ")
+                .addField("?bc", " **بروكاست** ")
+                .addField("?mute", " **Mute member** ")
+                .addField("?unmute", " **UnMute member** ")
+                .addField("?kick", " **kick member** ")
+                .addField("?ban", " **ban member** ")
+                .addField("?mutechannel", " **mutechat** ")
+                .addField("?unmutechannel", " **unmutechat** ")
+                .addField("?moveall", " **moveall to ur room** ")
+                .addField("?move", " **move anymember to ur room** ")
 
 
             user.send(adminHelp); 
@@ -645,7 +645,7 @@ client.on('message', function(message) { // Leaked by [ @Fr3on Gamer#9338 ]
 
 client.on('message', message => { // Leaked by [ @Fr3on Gamer#9338 ]
     if (message.author.bot) return;
-    if(message.content == '*mb') {
+    if(message.content == '?mb') {
     const embed = new Discord.RichEmbed()
     .addField(`حالة الأعضاء 🔋`,'-',   true)
 .addField(`💚 اونلاين :   ${message.guild.members.filter(m=>m.presence.status == 'online').size}`,'-',   true)
@@ -688,16 +688,6 @@ message.channel.send(`let args = message.content.split(" ").slice(${args}).join(
         message.channel.send({embed:embed})
     }
 })
-
-
-
-const ytdl = require("ytdl-core");
-const getYoutubeID = require('get-youtube-id');
-const fetchVideoInfo = require('youtube-info');
-const YouTube = require('simple-youtube-api');
-const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
-const queue = new Map();
-const request = require('request');
 
 
 client.on("message", message => { // Leaked by [ @Fr3on Gamer#9338 ]
