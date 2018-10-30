@@ -392,7 +392,6 @@ message.channel.sendEmbed(Embed).then(msg => {
                                 }
                                 });
 
-var prefix = "?" ;   // البرفكس هنا
 
 
 
