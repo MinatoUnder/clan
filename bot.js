@@ -38,7 +38,6 @@ client.user.setGame(`UnderWorld' Community🌹`,"http://twitch.tv/S-F")
 
 client.on('message', message => {
               if(!message.channel.guild) return;
-    var prefix = "?";
     if(message.content.startsWith(prefix + 'bc')) {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
@@ -134,7 +133,6 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
 });
 
 client.on('message', async message =>{
-  var prefix = "?";
 const ms = require("ms");
 if (message.author.omar) return;
 if (!message.content.startsWith(prefix)) return;
@@ -201,7 +199,6 @@ if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return mess
  
 });
 
-var prefix = "?"
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -243,7 +240,7 @@ client.on('message', message => {
 
 client.on('message', message => {
                                 if(!message.channel.guild) return;
-                        if (message.content.startsWith('*ping')) {
+                        if (message.content.startsWith('?ping')) {
                             if(!message.channel.guild) return;
                             var msg = `${Date.now() - message.createdTimestamp}`
                             var api = `${Math.round(client.ping)}`
@@ -279,7 +276,6 @@ client.on('ready',async () => {
 });
 
 client.on('message',message =>{
-    var prefix = "?";
     if(message.content.startsWith(prefix + 'topinv')) {
   message.guild.fetchInvites().then(i =>{
   var invites = [];
@@ -306,7 +302,6 @@ client.on('message',message =>{
     }
   });
 
-var prefix = "?"
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
